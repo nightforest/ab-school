@@ -1,0 +1,231 @@
+section.adult-section
+    .container.adult-section__container
+        .adult-section__descr.animation-down
+            p Розкрийте свій потенціал з 
+                strong.purple-color курсами англійської для дорослих! 
+            p Незалежно від вашого рівня та мети вивчення мови, ми пропонуємо гнучкі формати навчання
+        
+        ul.page-menu.animation-down
+            li.page-menu__item
+                a.page-menu__link.is-active(href="#") Групові заняття
+            li.page-menu__item
+                a.page-menu__link(href="#") Парні заняття
+            li.page-menu__item
+                a.page-menu__link(href="#") Індивідуальні заняття
+
+        .page-select.is-dropdown.animation-down
+            button.page-select__toggle.is-dropdown__toggle(type="button" aria-label="Choose Page") Групові заняття
+                svg.page-select__toggle-icon(width="10" height="7")
+                    use(xlink:href="img/sprite.svg#dropdown-arrow")
+
+            ul.page-select__dropdown.is-dropdown__menu
+                li.page-select__item
+                    a.page-select__link(href="#") Парні заняття
+                li.page-select__item
+                    a.page-select__link(href="#") Індивідуальні заняття
+
+        ul.adult-section__list
+            li.adult-section__item.animation-down
+                h2.sub-title Як проходять уроки
+
+                .white-block
+                    figure.white-block__figure.white-block__figure--right
+                        picture.white-block__picture
+                            img.white-block__img(src="img/adult-img-1.webp" srcset="img/adult-img-1@2x.webp 2x" loading="lazy" width="540" height="389"  alt="alt")
+
+                    h3 Основні етапи заняття у нашій школі:
+                    ol.numbered-list
+                        li
+                            p В англійській, як і в спорті, є 
+                                strong.blue-color.bold-uppercase РОЗМИНКА
+                                | . У нас вона називається Warm Up. Основна мета цього етапу - налаштувати на позитив та розігріти твою англійську.
+                            p Можемо зіграти в коротеньку гру або просто розповісти про приємні новини.
+                            strong.blue-color Тривалість: 3-5 хв
+                        li 
+                            p
+                                strong.blue-color.bold-uppercase ПЕРЕВІРКА ДЗ.
+                            | Ну а як же без неї?
+                            p Зазвичай студенти відправляють свої відповіді викладачу, а перед уроком перевіряємо та даємо зворотній зв'язок.
+                            p Вже на самому занятті розбираємо найпоширеніші помилки або складні моменти.
+                            strong.blue-color Тривалість: 5 -10 хв
+                        li
+                            p
+                                strong.blue-color.bold-uppercase ПОДАЧА НОВОГО МАТЕРІАЛУ
+                            p Знайомимо з новою лексикою або граматикою. на прикладах певних ситуацій - відео, текстів, аудіо
+                            p Потім у контексті цих ситуацій спостерігаємо та аналізуємо, як використовується певна граматична конструкція або лексика.
+                            strong.blue-color Тривалість: 7 - 10 хв
+                        li
+                            p
+                                strong.blue-color.bold-uppercase ТРЕНУВАННЯ НОВОГО МАТЕРІАЛУ ТА РОЗБІР СКЛАДНИХ СИТУАЦІЙ
+                            p Без довгих розмов переходимо до практики, і в ході виконання завдань розуміємо, які є труднощі в опануванні нового матеріалу. Досить часто тут даємо додаткові пояснення, детальний розбір конструкцій чи фраз.
+                            strong.blue-color Тривалість: 10 - 15 хв.
+                        li
+                            p 
+                                strong.blue-color.bold-uppercase РОЗМОВНА ПРАКТИКА
+                                | . А тепер найцікавіше - беремо все нове з цього уроку і використовуємо його в розмовних ситуаціях. Тут варіацій до завдань море - скласти розповідь із новими словами, підготувати презентацію, провести опитування серед одногрупників.
+                            p Найголовніше на даному етапі - використати щойно вивчену конструкцію чи лексику.
+                            strong.blue-color Тривалість: 15 - 20 хв
+                        li
+                            p
+                                strong.blue-color.bold-uppercase ПОВТОРЕННЯ, ЗАКРІПЛЕННЯ ВИВЧЕНОГО
+                                | . Після плідного тренування можна трошки і відпочити, але із користю для твоєї англійської.
+                            p На закінчення уроку ми можемо зіграти в коротеньку гру, яка тренує вивчений матеріал або переглянути відео.
+                            strong.blue-color Тривалість: 7 - 10 хв
+            
+            li.adult-section__item.animation-down
+                .banner
+                    h2.banner__title Не знаєте з 
+                        br
+                        | чого почати?
+                    h3.banner__sub-title Перевіримо Ваш рівень знань з англійської
+                    p.banner__descr
+                        span Запишіться на пробний урок
+                        br
+                        | і ми допоможемо Вам визначитися
+
+                    .banner__buttons
+                        a.button.banner__button(href="#" data-modal="modal-lesson") Пробний урок
+                        a.button.button--white.banner__button(href="#") Тест на рівень англійської
+
+                    picture.banner__picture
+                        img.banner__img(src="img/banner-img.webp" srcset="img/banner-img@2x.webp 2x" loading="lazy" width="483" height="448"  alt="alt")
+            
+            li.adult-section__item.animation-down
+                h3.sub-title Тривалість курсів з англійської
+
+                .white-block
+                    .white-block__text
+                        p Мінімальна рекомендована тривалість кожного рівня , з урахуванням, що навчання у групі може бути наведена приблизно так:
+
+                    ul.white-block__level
+                        li.white-block__level-item
+                            .icon-item
+                                .icon-item__count A1
+                                .icon-item__title Основний рівень
+                                .icon-item__descr Мінімум - 2-3 місяці, рекомендовано - 4-6 місяців
+                        
+                        li.white-block__level-item
+                            .icon-item
+                                .icon-item__count A2
+                                .icon-item__title Елементарний рівень
+                                .icon-item__descr Мінімум - 4-6 місяців, рекомендовано - 8-12 місяців
+                        
+                        li.white-block__level-item
+                            .icon-item
+                                .icon-item__count B1
+                                .icon-item__title Середній рівень
+                                .icon-item__descr Мінімум - 6-9 місяців, рекомендовано - 12-18 місяців
+                        
+                        li.white-block__level-item
+                            .icon-item
+                                .icon-item__count B2
+                                .icon-item__title Вище середнього рівень
+                                .icon-item__descr Мінімум - 9-12 місяців, рекомендовано - 18-24 місяці
+                        
+                        li.white-block__level-item
+                            .icon-item
+                                .icon-item__count C1
+                                .icon-item__title Досконалий рівень
+                                .icon-item__descr Мінімум - 12-18 місяців, рекомендовано - 24-36 місяців
+                        
+                        li.white-block__level-item
+                            .icon-item
+                                .icon-item__count C2
+                                .icon-item__title Вільне володіння мовою
+                                .icon-item__descr Мінімум - 18+ місяців, рекомендовано - 36+ місяців
+
+                    .white-block__line
+
+                    .white-block__text
+                        p Якщо Ви бажаєте швидко та ефективно оволодіти англійською мовою, то рекомендуємо розпочати курс навчання якнайшвидше. 
+                        p
+                            strong Реєструйтесь на курс вже сьогодні і почніть вашу англійську пригоду!
+
+                    .white-block__buttons.white-block__buttons--mt
+                        a.button.white-block__button(href="#") Тест на рівень англійської
+                        a.button.button--outline.white-block__button(href="#" data-modal="modal-lesson") Пробний урок
+
+            li.adult-section__item.animation-down
+                h3.sub-title Матеріали, за якими працює школа
+
+                .white-block
+                    .white-block__row
+                        .white-block__content.white-block__col
+                            p Реєструючись на наш курс ви обираєте одну з навчальних програм, які відповідають вашим потребам:
+
+                            ul.diamond-list
+                                li
+                                    strong.blue-color Speak Out by Pearson
+                                    | : Програма, розроблена компанією Pearson, допоможе вам покращити ваші загальні комунікативні навички в англійській мові.
+                                li 
+                                    strong.blue-color Keynote by National Geographic
+                                    | : поглибите ваші знання англійської мови та ознайомитеся з цікавими темами з різних сфер життя.
+                                li 
+                                    strong.blue-color Business Partner by Pearson
+                                    | : допоможе вам розвинути необхідні професійні навички та лексику для бізнесу.
+                                li 
+                                    strong.blue-color Cutting Edge by Pearson
+                                    | : пропонує сучасний підхід до вивчення англійської мови з акцентом на практичне використання та комунікативність.
+
+                        figure.white-block__figure.white-block__col
+                            picture.white-block__picture
+                                img.white-block__img(src="img/adult-img-2.webp" srcset="img/adult-img-2@2x.webp 2x" loading="lazy" width="570" height="398"  alt="alt")
+
+            li.adult-section__item.animation-down
+                .price-block
+                    .price-block__col
+                        h2.price-block__title Ціна та оплата
+                        .price-block__descr
+                            p
+                                strong Ми гарантуємо
+                                | , що кожна витрачена гривня буде заслуженою інвестицією у Вашу кар'єру та особистий розвиток
+                    
+                    .price-block__col
+                        .price-block__descr
+                            p Ціна нашого уроку відображає 
+                                strong високу якість, професіоналізм викладачів та індивідуальний підхід
+                                |  до навчання.
+                            p Інвестиція у Ваш успіх складає 
+                                strong від 264 грн за урок
+                                | .
+
+            li.adult-section__item.animation-down
+                h3.sub-title Як оплатити, щоб заощадити?
+
+                .white-block
+                    .white-block__row.white-block__row--fs
+                        figure.white-block__figure.white-block__col
+                            picture.white-block__picture
+                                img.white-block__img(src="img/adult-img-3.webp" srcset="img/adult-img-3@2x.webp 2x" loading="lazy" width="542" height="361"  alt="alt")
+
+                        .white-block__content.white-block__col
+                            h3 Ознайомтесь з нашими зручними умовами оплати:
+
+                            ul.diamond-list
+                                li
+                                    strong.blue-color Оплата на ФОП
+                                    | : Ми приймаємо оплату на Фізичну особу-підприємця, що забезпечує зручність та прозорість фінансових операцій.
+                                li 
+                                    strong.blue-color Мінімальний термін оплати
+                                    |  - абонемент на місяць
+                                li 
+                                    strong.blue-color Перший урок
+                                    |  - пробне заняття: Ви відвідуєте повноцінний урок за символічну плату 100грн. Ми впевнені, що ви будете задоволені нашими методиками та викладачами.
+                                li 
+                                    strong.blue-color Знижка 5% при оплаті половини курсу
+                                    | : Якщо ви обираєте оплатити половину курсу наперед, ми надамо вам знижку 5%, що дозволяє вам економити гроші та отримувати якісне навчання.
+                                li 
+                                    strong.blue-color Знижка 10% при оплаті повного курсу
+                                    | : При оплаті повного курсу наперед, ми надаємо вам ще більшу знижку - 10%, що є вигідним та стимулюючим варіантом.
+
+                    p Всі студенти школи AplusB  отримують безкоштовний доступ до 
+                        a.blue-link(href="#") розмовного клубу вихідного дня
+                        | .
+                    p Скористайтеся цією чудовою можливістю!
+                    p Приєднуйтесь до нас, отримуйте якісне навчання та безкоштовний доступ до розмовного клубу для швидкого досягнення вашої мовної мети.
+                    p
+                        strong Запишіться вже сьогодні!
+                    .white-block__buttons.white-block__buttons--mt
+                        a.button.white-block__button(href="#") Тест на рівень англійської
+                        a.button.button--outline.white-block__button(href="#" data-modal="modal-lesson") пробний урок
+                        a.button.button--outline.white-block__button(href="#" data-modal="modal-schedule") розклад груп

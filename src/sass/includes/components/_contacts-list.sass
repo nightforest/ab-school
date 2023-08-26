@@ -1,0 +1,72 @@
+.contacts-list
+    position: relative
+    border-radius: 12px
+    background: linear-gradient(180deg, #6A11CB 0.03%, #2575FC 100%)
+    box-shadow: 0px 2px 14px 0px rgba(112, 115, 255, .42)
+    margin: 0 0 -170px
+    padding: 50px
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+    gap: 15px 0
+    justify-content: center
+    z-index: $z-index-1
+
+    @media ($max-lg)
+        padding: 50px 25px
+
+    @media ($max-md)
+        padding: 15px
+
+    &__item
+        flex: 0 0 calc(100% / 7)
+        max-width: calc(100% / 7)
+        padding: 0 10px
+
+        @media ($max-md)
+            flex: 0 0 calc(100% / 3)
+            max-width: calc(100% / 3)
+
+    &__link
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            
+            .contacts-list__icon
+                transform: scale(1.2)
+
+    &__pic
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 60px
+        width: 100%
+        color: var(--white)
+        margin-bottom: 5px
+
+        @media ($max-md)
+            height: 35px
+
+    &__icon
+        transition: transform .5s ease
+
+        @media ($max-md)
+            height: 100%
+            width: auto
+    
+    &__title
+        font-size: 24px
+        font-weight: 500
+        line-height: 1.2
+        color: var(--white)
+        text-align: center
+
+        @media ($max-xl)
+            font-size: 20px
+
+        @media ($max-lg)
+            font-size: 14px
+        
+        @media ($max-md)
+            font-size: 12px

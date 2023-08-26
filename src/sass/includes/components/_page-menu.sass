@@ -1,0 +1,42 @@
+.page-menu
+    padding: 0
+    margin: 0 0 40px
+    list-style: none
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    gap: 30px
+
+    @media ($max-md)
+        display: none
+
+    &__item
+        grid-column: 4 span
+
+    &__link
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        border-radius: 12px
+        background: #fff
+        box-shadow: 0 2px 14px 0 rgba(216, 217, 255, .67)
+        height: 125px
+        font-size: 24px
+        font-weight: 700
+        line-height: 1.2
+        color: var(--deep-blue)
+        padding: 15px
+        transition: color .5s ease
+
+        @media ($max-lg)
+            font-size: 16px
+            height: 80px
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--red)
+
+        &.is-active
+            background: linear-gradient(143deg, #6A11CB 0.03%, #2575FC 100%)
+            color: var(--white)

@@ -1,0 +1,48 @@
+.numbered-list
+    padding: 0
+    margin: 0
+    list-style: none
+    counter-reset: list-counter
+
+    &:not(:last-child)
+        margin-bottom: .8rem
+
+    > li
+        position: relative
+        counter-increment: list-counter
+        padding-left: 50px
+
+        &:not(:last-child)
+            margin-bottom: 10px
+
+        &:last-child
+
+            &:after
+                display: none
+
+        &:before
+            content: counter(list-counter)
+            position: absolute
+            top: 0
+            left: 0
+            width: 34px
+            height: 34px
+            border-radius: 12px
+            background: linear-gradient(134deg, #6A11CB 0.03%, #2575FC 100%)
+            color: var(--white)
+            font-size: 25px
+            font-weight: 700
+            line-height: 1
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+
+        &:after
+            position: absolute
+            bottom: 0
+            left: 17px
+            height: calc(100% - 44px)
+            width: 1px
+            background: var(--deep-blue)
+            content: ""

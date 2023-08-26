@@ -1,0 +1,53 @@
+.social
+    font-style: normal
+
+    &__list
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        gap: 8px
+        margin: 0
+        padding: 0
+        list-style: none
+
+    &__link
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 40px
+        height: 40px
+        line-height: 1
+        color: var(--white)
+        border-radius: 12px
+        transition: all .5s ease
+
+        &--instagram
+            background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36.00%, #D22A8A 44.00%, #8B2AB2 60.00%, #1B2AF0 83.00%, #002AFF 88.00%)
+        
+        &--facebook
+            background: #0B84EE
+        
+        &--telegram
+            background: #27A6E5
+
+        &--viber
+            background: #7C509A
+            
+        &:hover,
+        &:active,
+        &:focus-visible
+            transform: scale(1.1)
+            color: var(--white)
+
+    &--small
+        
+        .social__list
+            gap: 4px
+
+            @media ($max-md)
+                gap: 10px
+
+        .social__link
+            width: 20px
+            height: 20px
+            border-radius: 4px

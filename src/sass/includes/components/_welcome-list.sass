@@ -1,0 +1,93 @@
+.welcome-list
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    gap: 40px
+    margin: 0
+    padding: 0
+    list-style: none
+
+    @media ($max-md)
+        display: flex
+        flex-direction: column
+        gap: 20px
+
+    &__item
+        position: relative
+        grid-column: 4 span
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        border-radius: 12px
+        background: #fff
+        box-shadow: 0 2px 14px 0 rgba(216, 217, 255, .67)
+        padding: 35px
+        min-height: 260px
+        text-align: center
+        z-index: $z-index-0
+        overflow: hidden
+
+        @media ($max-md)
+            order: 2
+            padding: 20px
+            min-height: 200px
+
+        &:before
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: var(--purple-gradient)
+            opacity: 0
+            transition: opacity .5s ease
+            z-index: $z-index-minus
+            content: ""
+
+        &:nth-child(2)
+            transform: translateY(-35px)
+
+            @media ($max-md)
+                transform: none
+                order: 1
+
+        &:hover
+            
+            &:before
+                opacity: 1
+
+            .welcome-list__pic
+                background: var(--white)
+                color: var(--purple)
+
+            .welcome-list__text
+                color: var(--white)
+    
+    &__pic
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 74px
+        height: 74px
+        background: var(--purple-gradient)
+        color: var(--white)
+        line-height: 1
+        font-size: 30px
+        font-weight: 700
+        border-radius: 12px
+        margin: 0 auto 20px
+        transition: all .5s ease
+    
+    &__text
+        font-size: 20px
+        font-weight: 700
+        line-height: 1.3
+        margin: 0
+        color: #3D53EB
+        transition: all .5s ease
+
+        @media ($max-xl)
+            font-size: 16px
+
+        @media ($max-md)
+            font-size: 14px

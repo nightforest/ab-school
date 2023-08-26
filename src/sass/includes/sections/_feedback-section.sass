@@ -1,0 +1,37 @@
+.feedback-section
+    padding: 50px 0
+
+    @media ($max-md)
+        padding: 15px 0 20px
+
+    &__container
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        align-items: center
+        gap: 30px
+
+        @media ($max-md)
+            display: flex
+            flex-direction: column
+            align-items: normal
+            gap: 20px
+    
+    &__col
+        grid-column: 3 span
+
+    &__title
+
+        @media ($max-md)
+            text-align: center
+
+    &__buttons
+        display: flex
+        flex-direction: column
+        gap: 10px
+
+        @media ($max-md)
+            flex-direction: row
+    
+    &__button
+        min-width: 0
+        width: 100%

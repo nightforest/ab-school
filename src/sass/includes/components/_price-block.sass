@@ -1,0 +1,66 @@
+.price-block
+    position: relative
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    border-radius: 12px
+    background: linear-gradient(180deg, #6A11CB 0.03%, #2575FC 100%)
+    box-shadow: 0 2px 14px 0 rgba(112, 115, 255, .42)
+    min-height: 200px
+    color: var(--white)
+    overflow: hidden
+    z-index: 0
+
+    @media ($max-md)
+        display: flex
+        flex-direction: column
+        text-align: center
+
+    &__col
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        grid-column: 6 span
+        padding: 30px
+
+        @media ($max-md)
+            padding: 20px
+
+        &:last-child
+            
+            &:before
+                position: absolute
+                top: 0
+                right: 0
+                width: 100%
+                height: 100%
+                opacity: .5
+                background: linear-gradient(88deg, #1F79FF 0.03%, #2575FC 100%, #F1F6FF 100%)
+                content: ""
+                z-index: -1
+
+    &__title
+        font-size: 25px
+        font-weight: 700
+        line-height: 1.2
+        margin: 0 0 10px
+
+        @media ($max-md)
+            font-size: 20px
+    
+    &__descr
+        font-size: 16px
+        font-weight: 300
+
+        @media ($max-md)
+            font-size: 14px
+
+        p
+            margin: 0
+
+            &:not(:last-child)
+                margin-bottom: 1rem
+        
+        strong
+            font-weight: 500
+        

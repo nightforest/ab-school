@@ -1,0 +1,208 @@
+.footer
+    position: relative
+    overflow: hidden
+    background: #161616
+    clip-path: polygon(50% 12%, 68% 10%, 84% 5%, 100% 0, 100% 100%, 0 100%, 0 0, 16% 5%, 32% 10%)
+    padding-top: 250px
+
+    @media ($max-md)
+        padding-top: 150px
+        clip-path: none
+
+    &__container
+        position: relative
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        gap: 30px
+        padding-bottom: 65px
+
+        @media ($max-md)
+            display: flex
+            flex-direction: column
+            gap: 20px
+            padding: 0 30px 75px
+    
+    &__col
+        grid-column: 4 span
+
+    &__title
+        font-size: 24px
+        font-weight: 800
+        color: var(--white)
+        margin: 0 0 30px
+
+        @media ($max-lg)
+            font-size: 20px
+
+        @media ($max-md)
+            font-size: 16px
+            margin: 0 0 12px
+
+        &--center
+            text-align: center
+
+            @media ($max-md)
+                text-align: left
+
+    &-contacts
+        display: flex
+        align-items: flex-start
+        gap: 10px
+        font-style: normal
+        line-height: 1.2
+
+        &__icon
+            margin-top: 6px
+            color: var(--white)
+            min-width: 16px
+            width: 16px
+
+            @media ($max-lg)
+                margin-top: 0
+
+        &__list
+            margin: 0
+            padding: 0
+            list-style: none
+
+        &__item
+            display: flex
+            align-items: center
+            justify-content: space-between
+            gap: 10px
+
+            &:not(:last-child)
+                margin-bottom: 15px
+
+                @media ($max-md)
+                    margin-bottom: 10px
+
+        &__link
+            position: relative
+            display: flex
+            align-items: center
+            gap: 10px
+            color: var(--white)
+            font-size: 24px
+            font-weight: 500
+            font-style: normal
+
+            @media ($max-lg)
+                font-size: 14px
+
+            &:before
+                position: absolute
+                bottom: 0
+                left: 0
+                display: block
+                width: 100%
+                height: 1px
+                background-color: var(--white)
+                transition: transform .5s ease
+                transform: scaleX(0)
+                content: ""
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--white)
+
+                &:before
+                    transform: scaleX(1)
+
+        &--center
+            justify-content: center
+
+            @media ($max-md)
+                justify-content: flex-start
+
+    &__social
+        margin-top: 25px
+
+        .social__list
+            justify-content: center
+
+            @media ($max-md)
+                gap: 15px
+
+    &__form
+
+        @media ($max-md)
+            display: none
+
+    &__call-button
+        display: none
+        margin: 10px auto 0
+        max-width: 180px
+
+        @media ($max-md)
+            display: flex
+
+    &__privacy
+        position: absolute
+        bottom: 75px
+        left: 15px
+
+        @media ($max-md)
+            position: relative
+            bottom: auto
+            left: auto
+            text-align: center
+
+        &-link
+            font-size: 16px
+            color: var(--white)
+            border-bottom: 1px solid var(--white)
+            transition: all .5s ease
+
+            @media ($max-md)
+                font-size: 14px
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--red)
+                border-color: var(--red)
+
+    &__bottom
+        position: relative
+        background: var(--white)
+        padding: 12px 0
+
+        @media ($max-md)
+            padding: 20px 0
+
+        &-container
+            display: flex
+            align-items: center
+            gap: 100px
+
+            @media ($max-lg)
+                gap: 30px
+
+            @media ($max-md)
+                flex-direction: column
+                gap: 15px
+                padding: 0 30px
+    
+    &__logo
+        margin-right: auto
+
+        @media ($max-md)
+            margin: 0 auto
+
+    &__dev
+        display: inline-flex
+        align-items: center
+        gap: 10px
+        font-size: 12px
+
+        &-link
+            display: flex
+
+    &__copyright
+        font-size: 12px
+
+    &--min
+        padding-top: 0
+        clip-path: none

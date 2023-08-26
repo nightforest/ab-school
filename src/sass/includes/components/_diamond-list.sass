@@ -1,0 +1,35 @@
+.diamond-list
+    padding: 0
+    margin: 0
+    list-style: none
+
+    &:not(:last-child)
+        margin-bottom: .8rem
+
+    > li
+        padding-left: 22px
+        background: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='6.36328' y='0.353553' width='8.5' height='8.5' transform='rotate(45 6.36328 0.353553)' fill='url(%23paint0_linear_618_3206)' stroke='%23005FA9' stroke-width='0.5'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_618_3206' x1='6.62068' y1='0.257397' x2='15.106' y2='8.74268' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23A3CFEE'/%3E%3Cstop offset='1' stop-color='%2300479C'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A") no-repeat top 4px left
+        font-size: 16px
+        line-height: 1.4
+        font-weight: 300
+
+        @media ($max-md)
+            font-size: 14px
+            padding-left: 26px
+
+        &:not(:last-child)
+            margin-bottom: .8rem
+
+    a
+        color: var(--black)
+        border-bottom: 1px solid var(--black)
+        transition: all .5s ease
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--red)
+            border-color: transparent
+
+    strong
+        font-weight: 500

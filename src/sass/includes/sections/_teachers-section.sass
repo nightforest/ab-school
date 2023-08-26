@@ -1,0 +1,61 @@
+.teachers-section
+    padding: 50px 0 80px
+
+    @media ($max-md)
+        padding: 20px 0 40px
+
+    &__container
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        align-items: center
+        gap: 40px
+
+        @media ($max-md)
+            display: flex
+            flex-direction: column
+            gap: 20px
+
+    &__picture
+        position: relative
+        grid-column: 6 span
+        height: 540px
+        display: flex
+
+        @media ($max-md)
+            height: 295px
+            margin: 0 -15px
+
+    &__img
+        position: absolute
+        top: 0
+        right: 0
+        width: calc(50vw - 20px)
+        height: 100%
+        border-radius: 0 12px 12px 0
+        box-shadow: 0 2px 14px 0 rgba(112, 115, 255, .42)
+        object-fit: cover
+
+        @media ($max-md)
+            position: relative
+            top: auto
+            right: auto
+            width: 100%
+            border-radius: 0
+
+    &__content
+        grid-column: 6 span
+
+        @media ($max-md)
+            text-align: center
+
+    &__title
+        margin: 0 0 10px
+
+    &__descr
+        font-size: 16px
+        font-weight: 300
+        color: #485870
+        margin: 0 0 15px
+
+        @media ($max-md)
+            font-size: 14px

@@ -1,0 +1,47 @@
+.contacts
+
+    &__list
+        display: flex
+        align-items: center
+        gap: 40px
+        margin: 0
+        padding: 0
+        list-style: none
+        line-height: 1.2
+    
+    &__link
+        display: flex
+        align-items: center
+        gap: 10px
+        color: var(--white)
+        font-size: 24px
+        font-weight: 500
+        font-style: normal
+
+        @media ($max-lg)
+            font-size: 18px
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--white)
+
+            span
+
+                &:before
+                    transform: scaleX(1)
+
+        span
+            position: relative
+
+            &:before
+                position: absolute
+                bottom: 0
+                left: 0
+                display: block
+                width: 100%
+                height: 1px
+                background-color: var(--white)
+                transition: transform .5s ease
+                transform: scaleX(0)
+                content: ""

@@ -1,0 +1,26 @@
+.up-button
+    position: absolute
+    top: -50px
+    right: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-left: auto
+    width: 50px
+    height: 50px
+    border-radius: 12px 12px 0 0
+    background: linear-gradient(111deg, #FF0844, #FF8B67, #FF0844)
+    background-size: 200%
+    color: var(--white)
+    transition: all .5s ease
+    cursor: pointer
+
+    @media ($max-md)
+        right: 50%
+        margin-right: -25px
+
+    &:hover,
+    &:active,
+    &:focus-visible
+        background-position: right
+        color: var(--white)

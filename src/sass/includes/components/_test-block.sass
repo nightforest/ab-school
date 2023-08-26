@@ -1,0 +1,55 @@
+.test-block
+
+    &__row
+        display: flex
+        justify-content: space-between
+
+        @media ($max-md)
+            flex-direction: column-reverse
+            gap: 20px
+
+    &__col
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    
+    &__picture
+        display: flex
+    
+    &__img
+        max-width: 100%
+        height: auto
+        border-radius: 12px
+
+    &__form
+
+        &:not(:last-child)
+            margin-bottom: 20px
+
+    &__points
+        font-size: 16px
+        font-weight: 700
+        color: var(--deep-blue)
+
+    &__player
+        margin-bottom: 20px
+        max-width: 300px
+        width: 100%
+
+    &__grid
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        gap: 5px 15px
+        max-width: 722px
+        margin: 0 auto
+
+        @media ($max-md)
+            display: flex
+            flex-direction: column
+
+        &-col
+            grid-column: 6 span
+
+            .test-block__picture
+                margin-bottom: 15px
+    

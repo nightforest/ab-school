@@ -1,0 +1,120 @@
+footer.footer
+    .container.footer__container
+        .footer__col
+            h2.footer__title Наш телефон
+            
+            address.footer-contacts
+                svg.footer-contacts__icon(width="16" height="16")
+                    use(xlink:href="img/sprite.svg#phone")
+                
+                ul.footer-contacts__list
+                    li.footer-contacts__item
+                        a.footer-contacts__link(href="tel:+380957418597") (095) 741-85-97
+
+                        .social.social--small
+                            ul.social__list
+                                li.social__item
+                                    a.social__link.social__link--telegram(href="#")
+                                        svg.social__icon(width="9" height="8")
+                                            use(xlink:href="img/sprite.svg#telegram")
+                                li.social__item
+                                    a.social__link.social__link--viber(href="#")
+                                        svg.social__icon(width="10" height="12")
+                                            use(xlink:href="img/sprite.svg#viber")
+
+                    li.footer-contacts__item
+                        a.footer-contacts__link(href="tel:+380637954313") (063) 795-43-13
+
+                        .social.social--small
+                            ul.social__list
+                                li.social__item
+                                    a.social__link.social__link--telegram(href="#")
+                                        svg.social__icon(width="9" height="8")
+                                            use(xlink:href="img/sprite.svg#telegram")
+                                li.social__item
+                                    a.social__link.social__link--viber(href="#")
+                                        svg.social__icon(width="10" height="12")
+                                            use(xlink:href="img/sprite.svg#viber")
+                    
+                    li.footer-contacts__item
+                        a.footer-contacts__link(href="tel:+380686932908") (068) 693-29-08
+
+                        .social.social--small
+                            ul.social__list
+                                li.social__item
+                                    a.social__link.social__link--telegram(href="#")
+                                        svg.social__icon(width="9" height="8")
+                                            use(xlink:href="img/sprite.svg#telegram")
+                                li.social__item
+                                    a.social__link.social__link--viber(href="#")
+                                        svg.social__icon(width="10" height="12")
+                                            use(xlink:href="img/sprite.svg#viber")
+                    
+        .footer__col
+            h2.footer__title.footer__title--center Ми на зв’язку
+
+            address.footer-contacts.footer-contacts--center
+                svg.footer-contacts__icon(width="16" height="16")
+                    use(xlink:href="img/sprite.svg#email")
+                
+                ul.footer-contacts__list
+                    li.footer-contacts__item
+                        a.footer-contacts__link(href="mailto:info@aplusb.com.ua") info@aplusb.com.ua
+
+            address.social.footer__social
+                ul.social__list
+                    li.social__item
+                        a.social__link.social__link--instagram(href="#")
+                            svg.social__icon(width="20" height="20")
+                                use(xlink:href="img/sprite.svg#instagram")
+                    li.social__item
+                        a.social__link.social__link--facebook(href="#")
+                            svg.social__icon(width="12" height="23")
+                                use(xlink:href="img/sprite.svg#facebook")
+                    li.social__item
+                        a.social__link.social__link--telegram(href="#")
+                            svg.social__icon(width="19" height="17")
+                                use(xlink:href="img/sprite.svg#telegram")
+                    li.social__item
+                        a.social__link.social__link--viber(href="#")
+                            svg.social__icon(width="21" height="23")
+                                use(xlink:href="img/sprite.svg#viber")
+
+        .footer__col
+            form.form.footer__form(id="form" autocomplete="off" novalidate="novalidate")
+                h2.footer__title.footer__title--center Зателефонувати вам?
+                
+                .form__group
+                    input#inputName.input.form__input(type="text" name="inputFirstName" placeholder="" autocomplete="off" required)
+                    label.form__placeholder Ім'я
+                
+                .form__group
+                    input#inputPhone.input.form__input.tell-input(type="text" name="inputPhone" placeholder="" autocomplete="off" required)
+
+                .form__group
+                    textarea#textarea.textarea.form__input(name="message" rows="3" autocomplete="off" required)
+                    label.form__placeholder Ваше повідомлення
+
+                .form__button-group
+                    button.button.form__button Надіслати
+            
+            a.button.button--white.footer__call-button(href="#" data-modal="modal-consult") Зателефонувати вам? 
+
+        .footer__privacy
+            a.footer__privacy-link(href="#") Політика конфіденційності
+
+    .footer__bottom
+        a.up-button(href="#main" data-scroll)
+            svg.up-button__icon(width="23" height="15")
+                use(xlink:href="img/sprite.svg#up-arrow")
+
+        .container.footer__bottom-container
+            .logo.footer__logo
+                a.logo__link(href="#" aria-label="logo")
+                    img.logo__img(src="img/logo.svg" width="264" height="35" alt="logo")
+                            
+            .footer__dev Розробка сайту 
+                a.footer__dev-link(href="https://shafem.com/" target="_blank")
+                    img.footer__dev-img(src="img/shafem.svg" width="90" height="20" alt="shafem logo")
+
+            .footer__copyright &copy; 2023 Всі права захищені

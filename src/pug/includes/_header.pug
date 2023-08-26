@@ -1,0 +1,107 @@
+header.header
+    .header__top
+        address.contacts.header__contacts
+            ul.contacts__list
+                li.contacts__item
+                    a.contacts__link(href="tel:+380957418597")
+                        svg.contacts__icon(width="16" height="16")
+                            use(xlink:href="img/sprite.svg#phone")
+                        span (095) 741-85-97
+                
+                li.contacts__item
+                    a.contacts__link(href="mailto:info@aplusb.com.ua")
+                        svg.contacts__icon(width="16" height="12")
+                            use(xlink:href="img/sprite.svg#email")
+                        span info@aplusb.com.ua
+
+        nav.actions.header__actions
+            ul.actions__list
+                li.actions__item.is-dropdown
+                    button.actions__button.is-dropdown__toggle(type="button" aria-label="Show phone")
+                        svg.actions__icon(width="21" height="21")
+                            use(xlink:href="img/sprite.svg#phone")
+
+                    .actions__dropdown.is-dropdown__menu
+                        a.actions__link(href="tel:+380957418597")
+                            svg.actions__link-icon(width="16" height="16")
+                                use(xlink:href="img/sprite.svg#phone")
+                            span (095) 741-85-97
+
+                li.actions__item.is-dropdown
+                    button.actions__button.is-dropdown__toggle(type="button" aria-label="Show phone")
+                        svg.actions__icon(width="21" height="21")
+                            use(xlink:href="img/sprite.svg#email")
+
+                    .actions__dropdown.is-dropdown__menu
+                        a.actions__link(href="mailto:info@aplusb.com.ua")
+                            svg.actions__link-icon(width="16" height="12")
+                                use(xlink:href="img/sprite.svg#email")
+                            span info@aplusb.com.ua
+
+        address.social.header__social
+            ul.social__list
+                li.social__item
+                    a.social__link.social__link--instagram(href="#")
+                        svg.social__icon(width="20" height="20")
+                            use(xlink:href="img/sprite.svg#instagram")
+                li.social__item
+                    a.social__link.social__link--facebook(href="#")
+                        svg.social__icon(width="12" height="23")
+                            use(xlink:href="img/sprite.svg#facebook")
+                li.social__item
+                    a.social__link.social__link--telegram(href="#")
+                        svg.social__icon(width="19" height="17")
+                            use(xlink:href="img/sprite.svg#telegram")
+                li.social__item
+                    a.social__link.social__link--viber(href="#")
+                        svg.social__icon(width="21" height="23")
+                            use(xlink:href="img/sprite.svg#viber")
+                            
+        .lang.header__lang
+            button.lang__toggle(type="button" aria-label="Choose language") UA
+                svg.lang__toggle-icon(width="10" height="7")
+                    use(xlink:href="img/sprite.svg#dropdown-arrow")
+
+            ul.lang__dropdown
+                li.lang__item
+                    a.lang__link(href="#") RU
+
+    .header__bottom
+        .logo.header__logo
+            a.logo__link(href="#" aria-label="logo")
+                img.logo__img(src="img/logo.svg" width="515" height="68" alt="logo")
+
+        nav.menu.header__menu
+            ul.menu__list
+                li.menu__item.is-dropdown
+                    a.menu__link.is-dropdown__toggle.is-active(href="#") Для дорослих
+                        svg.menu__arrow(width="10" height="7")
+                            use(xlink:href="img/sprite.svg#dropdown-arrow")
+
+                    ul.menu__sub.is-dropdown__menu
+                        li.menu__sub-item
+                            a.menu__sub-link(href="#") Парні заняття
+                        li.menu__sub-item
+                            a.menu__sub-link(href="#") Групові заняття
+                        li.menu__sub-item
+                            a.menu__sub-link(href="#") Індивідуальні заняття
+
+                li.menu__item
+                    a.menu__link(href="#") Для компаній
+                li.menu__item
+                    a.menu__link(href="#") Для дітей
+                li.menu__item
+                    a.menu__link(href="#") Розмовний клуб
+                li.menu__item
+                    a.menu__link(href="#") Команда
+                li.menu__item
+                    a.menu__link(href="#") Правила навчання
+                li.menu__item
+                    a.menu__link(href="#") Акції та знижки
+                li.menu__item
+                    a.menu__link(href="#") Контакти
+
+        button.burger.header__burger(type="button" aria-label="Open mobile menu" aria-expanded="false" data-nav-toggle)
+            .burger__line
+            .burger__line
+            .burger__line

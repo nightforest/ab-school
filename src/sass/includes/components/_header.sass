@@ -1,0 +1,82 @@
+.header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .05)
+    z-index: $z-index-3
+    
+    &__top
+        display: flex
+        align-items: center
+        padding: 10px 30px
+        background: var(--purple-gradient)
+
+        @media ($max-md)
+            padding: 10px 15px 10px 20px
+
+    &__bottom
+        display: flex
+        align-items: center
+        gap: 30px
+        padding: 10px 30px
+        background: var(--white)
+        min-height: 89px
+
+        @media ($max-md)
+            padding: 10px 15px
+            min-height: 52px
+            
+    &__contacts
+        margin-right: auto
+
+        @media ($max-md)
+            display: none
+    
+    &__actions
+        display: none
+        margin-right: auto
+
+        @media ($max-md)
+            display: block
+
+    &__social
+        margin-right: 8px
+
+        @media ($max-md)
+            margin-right: 10px
+
+        .social__list
+
+            @media ($max-md)
+                gap: 10px
+
+        .social__link
+
+            @media ($max-md)
+                width: 28px
+                height: 28px
+                border-radius: 8px
+
+        .social__icon
+
+            @media ($max-md)
+                width: 14px
+                height: 14px
+
+    &__logo
+        margin-right: auto
+
+        @media ($max-md)
+            max-width: 240px
+
+    &__menu
+        
+        @media ($max-xl)
+            display: none
+
+    &__burger
+        display: none
+
+        @media ($max-xl)
+            display: flex

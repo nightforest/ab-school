@@ -1,0 +1,89 @@
+.lang
+    position: relative
+
+    &__toggle
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        gap: 4px
+        height: 40px
+        width: 70px
+        padding: 8px
+        font-size: 14px
+        font-weight: 500
+        line-height: 1
+        text-transform: uppercase
+        color: var(--white)
+        border: 1px solid var(--white)
+        border-radius: 12px
+        transition: background .5s ease, color .5s ease
+
+        @media ($max-md)
+            height: 28px
+            width: 50px
+            border-radius: 8px
+            font-size: 10px
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            background: var(--white)
+            color: var(--blue)
+
+        &.is-active
+
+            .lang__toggle-icon
+                transform: rotateX(180deg)
+
+        &-icon
+            transition: transform .5s ease
+            margin-top: -2px
+
+            @media ($max-md)
+                width: 7px
+                height: 7px
+    
+    &__dropdown
+        position: absolute
+        top: 110%
+        left: 0
+        width: 100%
+        margin: 0
+        padding: 10px 0
+        list-style: none
+        background: var(--white)
+        opacity: 0
+        border-radius: 12px
+        visibility: hidden
+        overflow: hidden
+        transform: translateY(10px)
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .15)
+        transition: all .25s ease
+        z-index: $z-index-1
+
+        @media ($max-md)
+            border-radius: 8px
+
+        &.is-visible
+            opacity: 1
+            visibility: visible
+            transform: translateY(0)
+    
+    &__link
+        display: block
+        padding: 2px 16px
+        font-size: 14px
+        text-transform: uppercase
+        font-weight: 500
+        color: var(--blue)
+        transition: background .5s ease, color .5s ease
+
+        @media ($max-md)
+            font-size: 10px
+            padding: 2px 12px
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--red)

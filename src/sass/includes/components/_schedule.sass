@@ -1,0 +1,106 @@
+.schedule
+    display: none
+
+    @media ($max-md)
+        display: block
+
+    &-select
+        position: relative
+        margin-bottom: 20px
+        
+        &__toggle
+            display: flex
+            align-items: center
+            justify-content: space-between
+            text-align: center
+            gap: 4px
+            height: 40px
+            width: 100%
+            padding: 8px 20px
+            font-size: 14px
+            font-weight: 700
+            line-height: 1
+            color: var(--white)
+            border-radius: 12px
+            background: var(--red-gradient)
+            box-shadow: 0 2px 14px 0 rgba(216, 217, 255, .67)
+            transition: background .5s ease, color .5s ease
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--white)
+                background: var(--red-gradient)
+
+            &-icon
+                transition: transform .5s ease
+
+            &.is-active
+
+                .schedule-select__toggle-icon
+                    transform: rotateX(180deg)
+        
+        &__dropdown
+            position: absolute
+            top: 110%
+            left: 0
+            width: 100%
+            margin: 0
+            padding: 10px 0
+            list-style: none
+            background: var(--white)
+            opacity: 0
+            border-radius: 12px
+            visibility: hidden
+            overflow: hidden
+            transform: translateY(10px)
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .15)
+            transition: all .25s ease
+            z-index: $z-index-1
+
+            &.is-visible
+                opacity: 1
+                visibility: visible
+                transform: translateY(0)
+        
+        &__link
+            display: block
+            padding: 2px 20px
+            font-size: 14px
+            font-weight: 700
+            color: var(--black)
+            transition: background .5s ease, color .5s ease
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--red)
+
+    &-list
+        margin: 0
+        padding: 0
+        list-style: none
+
+        &__item
+            background: #EBF3FF
+            padding: 15px
+            display: none
+
+            &.is-visible
+                display: block
+        
+        &__title
+            font-size: 14px
+            line-height: 1.2
+            margin: 0
+            color: var(--deep-blue)
+
+        &__text
+            font-size: 14px
+            line-height: 1.4
+
+            p
+                margin: 0
+
+            &:not(:last-child)
+                margin-bottom: 15px
